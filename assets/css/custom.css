@@ -91,6 +91,7 @@
 .header-vin-search button {
     width: 75px;
     border-radius: 0 5px 5px 0;
+    padding: 0;
 }
 
 .m-vin-search {
