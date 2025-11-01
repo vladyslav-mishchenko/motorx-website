@@ -1,16 +1,189 @@
-.mobile-button{
+.mobile-button {
     position: relative;
 }
 
-.nice-select{
+.nice-select {
     padding: 10px;
 }
 
-.tf-car-service .vin{
+.tf-car-service .vin {
     display: block;
 }
 
-.listing-grid-item .vin{
+.listing-grid-item .vin {
     display: block;
 }
 
+.mobile-menu {
+    padding-right: 0;
+    width: 280px;
+}
+
+.mobile-menu .close-btn {
+    position: static;
+}
+
+.mmenu-btn {
+    width: 40px;
+    height: 25px;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mmenu-btn span {
+    height: 3px;
+    display: block;
+    background-color: red;
+}
+
+.close-btn::before {
+    content: "\e97a";
+    font-family: "icomoon";
+    font-size: 40px;
+    font-weight: 100;
+    color: red;
+}
+
+.close-btn {
+    display: flex;
+    align-items: center;
+}
+
+.mmenu-top {
+    height: 71px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 0 20px;
+    box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);
+}
+
+.mmenu-top .c2 {
+    flex-grow: 1;
+}
+
+.mmenu-top .mlogo {
+    width: 100px;
+}
+
+.mlanguages .nice-select {
+    width: 50px;
+    margin: 0 auto;
+}
+
+/* vin search */
+.header-vin-search {
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+}
+
+.header-vin-search input {
+    width: 250px;
+    border-radius: 5px 0 0 5px;
+    padding: 0 10px;
+}
+
+.header-vin-search button {
+    width: 75px;
+    border-radius: 0 5px 5px 0;
+}
+
+.m-vin-search {
+    padding: 20px 20px 0 20px;
+}
+
+.m-vin-search button {
+    width: 50px;
+    height: auto;
+    padding: 0;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.m-vin-search input {
+    padding: 0 7px;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+    background-color: #00000033;
+    border: none;
+}
+
+.m-vin-search button .search-icon {
+    color: #ffffff;
+    width: 22px;
+    height: 22px;
+}
+
+.m-vin-search-form {
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+}
+
+/* end vin search */
+
+.logo-box .logo {
+    width: 123px;
+    height: auto;
+}
+
+.d-header {}
+
+.d-header .c1 {
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.d-header .c3 {}
+
+.d-header .c4 {
+    display: none;
+}
+
+.header-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-form-widget .button-search-listing {
+    padding: 15px;
+}
+
+@media only screen and (max-width: 991px) {
+    .main-menu {
+        display: none;
+    }
+
+    .d-header .c4 {
+        display: block;
+    }
+
+    .d-header .c3 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1399px) {}
+
+@media only screen and (max-width: 1200px) {
+    .header-vin-search input {
+        width: 180px;
+    }
+
+    .header-vin-search button {
+        width: 70px;
+    }
+
+    .main-header .main-menu .navigation>li {
+        margin-right: 25px;
+    }
+}
