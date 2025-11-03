@@ -28,8 +28,15 @@
     height: 25px;
     cursor: pointer;
 
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -48,21 +55,35 @@
 }
 
 .close-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .mmenu-top {
     height: 71px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
     padding: 0 20px;
+    -webkit-box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);
     box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);
 }
 
 .mmenu-top .c2 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex-grow: 1;
 }
 
@@ -77,19 +98,26 @@
 
 /* vin search */
 .header-vin-search {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     height: 35px;
 }
 
 .header-vin-search input {
     width: 250px;
+    -webkit-border-radius: 5px 0 0 5px;
     border-radius: 5px 0 0 5px;
     padding: 0 10px;
 }
 
 .header-vin-search button {
     width: 75px;
+    -webkit-border-radius: 0 5px 5px 0;
     border-radius: 0 5px 5px 0;
     padding: 0;
 }
@@ -103,14 +131,16 @@
     height: auto;
     padding: 0;
     border: none;
+    -webkit-border-radius: 0 5px 5px 0;
     border-radius: 0 5px 5px 0;
 }
 
 .m-vin-search input {
     padding: 0 7px;
+    -webkit-border-radius: 5px 0 0 5px;
     border-radius: 5px 0 0 5px;
     font-size: 14px;
-    background-color: #00000033;
+    background-color: rgba(0, 0, 0, 0.2);
     border: none;
 }
 
@@ -121,7 +151,12 @@
 }
 
 .m-vin-search-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     height: 35px;
 }
@@ -136,9 +171,15 @@
 .d-header {}
 
 .d-header .c1 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex-grow: 1;
 
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -149,14 +190,25 @@
 }
 
 .header-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 20px;
 }
 
 .search-form-widget .button-search-listing {
     padding: 15px;
+}
+
+.car-title .vin {
+    display: block;
 }
 
 @media only screen and (max-width: 991px) {
